@@ -1,0 +1,75 @@
+#projects ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-card {
+  border: 3px solid yellow;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-previews {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  width: 100%;
+  padding-bottom: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: #6a5acd transparent;
+}
+
+.project-previews::-webkit-scrollbar {
+  height: 5px;
+}
+
+.project-previews::-webkit-scrollbar-thumb {
+  background: #6a5acd;
+  border-radius: 4px;
+}
+
+.project-thumbnail {
+  height: 160px;
+  min-width: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #6a5acd;
+  flex-shrink: 0;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+#projects a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#projects a:hover {
+  background-color: #0056b3;
+}
+
+.project-card h2, .project-card p {
+  background: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
