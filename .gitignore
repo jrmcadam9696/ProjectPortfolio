@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+info655-jm5392PortfolioProject/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
